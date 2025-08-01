@@ -11,9 +11,9 @@ const App = () => {
     <div>
       {/* <HomePage /> */}
       {/* <StudentLoginPage /> */}
-      <StudentDashboard />
+      {/* <StudentDashboard /> */}
       {/* <FacultyLoginPage /> */}
-      {/* <FacultyDashboardPage /> */}
+      <FacultyDashboardPage />
       {/* <FacultyApprovalList /> */}
     </div>
   )
