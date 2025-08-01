@@ -2,6 +2,7 @@ import dashphoto from '../../assets/StudentLoginImages/dhashimg1.jpg';
 import profilephoto from '../../assets/StudentLoginImages/dashimg3.webp';
 import rmklogo from "../../assets/LandingPageImages/rmklogo.png";
 import StudentSidebar from './StudentSidebar';
+import './StudentDashboard.css';
 
 const StudentDashboard = () => {
   return (
@@ -12,7 +13,7 @@ const StudentDashboard = () => {
           <img src={rmklogo} alt="logo" style={{ width: "9%", height: "9%", padding: "0.5%" }} />
           <h1 style={{ fontSize: "15px", fontWeight: "bold", color: "#004d40", padding: "1% 0%" }}>INFORMATION TECHNOLOGY</h1>
         </div>
-
+    {/*Profile Card */}
         <div style={{ width: "100%", height: "50%", display: "flex", justifyContent: "center" }}>
           <div style={{ width: "94%", height: "100%", backgroundColor: "white", borderRadius: "20px", position: "relative" }}>
             <div style={{ width: "100%", height: "45%" }}>
@@ -42,8 +43,84 @@ const StudentDashboard = () => {
             </div>
           </div>
         </div>
+        {/* Historical Overview + Status - Matches Profile Card Height */}
+<div style={{
+  width: "100%",
+  height: "40%", 
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "flex-start",
+  marginTop:"1%",
+  boxSizing:"border-box",
+}}>
+  <div style={{
+    width: "94%",
+    height: "100%", 
+    display: "flex",
+    gap: "2%",
+    boxSizing: "border-box"
+  }}>
+    {/* Historical Overview */}
+    <div style={{
+      width: "65%",
+      height: "100%",
+      backgroundColor: "white",
+      borderRadius: "20px",
+      padding: "2%",
+      overflowY: "auto",
+      boxSizing: "border-box"
+    }}>
+      <h3 style={{ fontWeight: "600", fontSize: "18px", marginBottom: "10px" }}>Historical Overview</h3>
+      <table style={{ width: "100%", borderCollapse: "collapse", borderRadius: "12px", overflow: "hidden" }}>
+        <thead style={{ backgroundColor: "#f0f0f0" }}>
+          <tr style={{ textAlign: "left" }}>
+            <th style={{ padding: "12px" }}>S.NO</th>
+            <th style={{ padding: "12px" }}>REASON</th>
+            <th style={{ padding: "12px" }}>FROM DATE</th>
+            <th style={{ padding: "12px" }}>TO DATE</th>
+          </tr>
+        </thead>
+        <tbody>
+          {[1, 2, 3].map((num) => (
+            <tr key={num} style={{ borderBottom: "1px solid #ddd" }}>
+              <td style={{ padding: "12px" }}>{num}.</td>
+              <td style={{ padding: "12px" }}>DEEPAVALI</td>
+              <td style={{ padding: "12px" }}>01/08/2025</td>
+              <td style={{ padding: "12px" }}>01/08/2025</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    {/* Status Box */}
+    <div style={{
+      width: "30%",
+      height: "100%",
+      backgroundColor: "white",
+      borderRadius: "20px",
+      padding: "2%",
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "flex-start",
+      boxSizing: "border-box",
+      overflowY: "auto"
+    }}>
+      <h3 style={{ fontWeight: "600", fontSize: "18px", marginBottom: "10px", textAlign: "center" }}>Status</h3>
+      <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+        <div className="status-box status-aaproved" >APPROVED</div>
+        <div className="status-box status-pending">PENDING</div>
+        <div className="status-box status-rejected">REJECTED</div>
       </div>
+    </div>
+  </div>
+</div>
+
       </div>
+    </div>
+    
+  
+      
   );
 };
 
