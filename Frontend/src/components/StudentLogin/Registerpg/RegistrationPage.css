@@ -56,9 +56,8 @@
 }
 
 .button-container {
-  grid-column: span 2;
   padding:1% 0% 0.1%;
-  text-align: right;
+  right: 0;
 }
 
 
@@ -74,7 +73,7 @@
 
 
 
-button {
+.button-container {
   background-color: #004d2a;
   color: white;
   padding: 12px 50px;
@@ -86,6 +85,11 @@ button {
   transition: background-color 0.3s ease;
 }
 
-button:hover {
+.button-container:hover {
   background-color: #00663d;
+}
+
+.button-div{
+  grid-column: span 2;
+  text-align: right;
 }

@@ -58,7 +58,7 @@ const FacultyApprovalList = () => {
             <div>
                  <h1 style={{color:"rgba(14, 73, 71, 1)",fontSize:"20px",fontWeight:"bolder",textAlign:"center",}}>STUDENT APPROVAL LIST</h1>
                 <div style={{ width: "100%", height: "100%", textAlign: "center" }}>
-                    <div style={{ backgroundColor: "rgba(217, 217, 217, 1)", width: "90%",height:"73vh",overflowY:"auto", margin: "1% auto" ,border:"8px solid rgba(217, 217, 217,1)",borderRadius:"10px"}}>
+                    <div style={{ backgroundColor: "rgba(217, 217, 217, 1)", width: "90%",height:"73vh",overflowY:"auto", margin: "0% auto" ,border:"8px solid rgba(217, 217, 217,1)",borderRadius:"10px"}}>
                         <table style={{ borderCollapse: "collapse", width: "100%" ,borderRadius:"20px"}}>
                         <thead>
                         <tr style={{borderBottom:"8px solid rgba(217, 217, 217, 1)"}}>
@@ -72,7 +72,7 @@ const FacultyApprovalList = () => {
                                 REGISTER NUMBER
                             </th>
                             <th style={{position: 'sticky',top: 0,backgroundColor: 'white',zIndex: 1,padding: '0.75%'}}>
-                                REMARK
+                                FORM DETAILS
                             </th>
                             <th style={{position: 'sticky',top: 0,backgroundColor: 'white',zIndex: 1,padding: '0.75%'}}>
                                 VALIDATION
@@ -87,7 +87,7 @@ const FacultyApprovalList = () => {
                                 <td style={{ padding: "10px",textAlign:"center"}}>{student.name}</td>
                                 <td style={{ padding: "10px",textAlign:"center"}}>{student.regno}</td>
                                 <td style={{ padding: "10px",textAlign:"center" }}>
-                                <   input style={{ padding: "5px", width: "90%",border:"1px solid black",textAlign:"center" }} placeholder="Enter remark" />
+                                    <button>VIEW FORM</button>
                                 </td>
 
                                 <td style={{ padding: "10px",textAlign:"center"}}>
@@ -101,9 +101,9 @@ const FacultyApprovalList = () => {
                     </div>
                     </div>
             </div>
-            <div style={{width:"100%",display:"flex",justifyContent:"space-between",padding:"0.7% 5% 0% 5%"}}>
-                <button style={{padding:"1% 3%",backgroundColor:"rgba(197, 9, 12, 1)",color:"white",fontWeight:"bold",fontSize:"14px",borderRadius:"25px"}}>REJECT ALL</button>
-                <button style={{padding:"1% 3%",backgroundColor:"rgba(14, 73, 71, 1)",color:"white",fontWeight:"bold",fontSize:"14px",borderRadius:"25px"}}>APPROVE ALL</button>
+            <div style={{width:"90%",display:"flex",justifyContent:"space-between",padding:"0.7% 5% 0% 5%"}}>
+                <button style={{padding:"1% 3%",backgroundColor:"rgba(197, 9, 12, 1)",color:"white",fontWeight:"bold",fontSize:"14px",borderRadius:"25px", border:"none"}}>REJECT ALL</button>
+                <button style={{padding:"1% 3%",backgroundColor:"rgba(14, 73, 71, 1)",color:"white",fontWeight:"bold",fontSize:"14px",borderRadius:"25px", border:"none"}}>APPROVE ALL</button>
             </div>
         </div>
         </div>
