@@ -1,6 +1,4 @@
-import { BiBarChartSquare ,BiSolidUserDetail } from "react-icons/bi";
 import { MdSpaceDashboard ,MdOutlineAppRegistration } from "react-icons/md";
-import { BsListCheck } from "react-icons/bs";
 import { IoIosLogOut } from "react-icons/io";
 import { CgProfile } from "react-icons/cg";
 import Profile from "../../assets/StudentLoginImages/profile.png"
