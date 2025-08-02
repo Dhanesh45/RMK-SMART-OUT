@@ -5,16 +5,20 @@ import StudentDashboard from './components/StudentLogin/StudentDashboard'
 import FacultyLoginPage from './components/FacultyLogin/FacultyLoginPage'
 import FacultyDashboardPage from './components/FacultyLogin/FacultyDashboard/FacultyDashboardPage'
 import FacultyApprovalList from './components/FacultyLogin/FacultyApprovalList'
+import ViewForm from './components/FacultyLogin/ViewForm'
+import RegistrationPage from './components/StudentLogin/Registerpg/RegistrationPage'
 
 const App = () => {
   return (
     <div>
       {/* <HomePage /> */}
       {/* <StudentLoginPage /> */}
-      {/*<StudentDashboard />*/}
+      {/*{/* <StudentDashboard />*/} */}
       <FacultyLoginPage /> 
       {/* <FacultyDashboardPage /> */}
-      {/* <FacultyApprovalList /> */}
+      <FacultyApprovalList />
+      <RegistrationPage/>
+      {/* <ViewForm /> */}
     </div>
   )
 }
