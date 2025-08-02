@@ -7,18 +7,22 @@ import FacultyDashboardPage from './components/FacultyLogin/FacultyDashboard/Fac
 import FacultyApprovalList from './components/FacultyLogin/FacultyApprovalList'
 import ViewForm from './components/FacultyLogin/ViewForm'
 import RegistrationPage from './components/StudentLogin/Registerpg/RegistrationPage'
+import StudentProfile from './components/StudentLogin/ProfilePage/StudentProfile'
+import Learn from './components/StudentLogin/ProfilePage/Learn'
 
 const App = () => {
   return (
     <div>
       {/* <HomePage /> */}
       {/* <StudentLoginPage /> */}
-      {/* <StudentDashboard />*/}
+     {/* <StudentDashboard />*/}
       <FacultyLoginPage /> 
       {/* <FacultyDashboardPage /> */}
       <FacultyApprovalList />
       <RegistrationPage/>
       {/* <ViewForm /> */}
+      {/*<Learn /> */}
+      <StudentProfile />
     </div>
   )
 }
