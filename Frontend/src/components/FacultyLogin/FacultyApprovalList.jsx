@@ -50,7 +50,7 @@ const FacultyApprovalList = () => {
   return (  
         <div className="flex">
            <FacultySidebar /> 
-        <div style={{width:"85%",height:"100vh",backgroundColor:"rgba(238, 238, 238, 0.5)"}}>
+            <div style={{width:"85%",height:"100vh",backgroundColor:"rgba(238, 238, 238, 0.5)"}}>
             <div style={{display:"flex",justifyContent:"space-between",}}>
                 <img src={rmklogo} width="9%" height="9%" style={{padding:"0.5%",}}/>
                 <h1 style={{color:"rgba(14, 73, 71, 1)",fontSize:"15px",fontWeight:"bolder",padding:"1.5% 0% 0% 0%",}}>INFORMATION TECHNOLOGY</h1>
