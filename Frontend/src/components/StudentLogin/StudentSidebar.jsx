@@ -5,7 +5,7 @@ import { GiTeacher } from "react-icons/gi";
 import { FaClipboardList } from "react-icons/fa";
 import { IoIosLogOut } from "react-icons/io";
 import { CgProfile } from "react-icons/cg";
-import { useState } from "react";
+// import { useState } from "react";
 
 
 const StudentSidebar = ({setActivePage}) => {
@@ -22,7 +22,7 @@ const StudentSidebar = ({setActivePage}) => {
     },
   ];
 
-  const [click, setClick] = useState(false);
+  // const [click, setClick] = useState(false);
 
   return (
     <div
@@ -65,12 +65,12 @@ const StudentSidebar = ({setActivePage}) => {
 
       <div>
         <div>
-        <button style={{margin:"0% 10% 0% 10% ",width:"80%",border:"none",backgroundColor:"rgba(14, 73, 71, 1)",color:"white",borderRadius:"20px",fontSize:'15px',fontWeight:"bold",padding:'2%',display:"flex",justifyContent:"center",alignItems:"center"}}>
-            Help
+        <button style={{margin:"0% 10% 0% 10% ",width:"80%",border:"none",backgroundColor:"rgba(14, 73, 71, 1)",color:"white",borderRadius:"20px",fontSize:'15px',fontWeight:"bold",padding:'2%',display:"flex",justifyContent:"center",alignItems:"center",cursor:"pointer"}}>
+            Profile
         </button>
         <div style={{padding:"5% 0% 0% 0%",display:'flex',gap:"4px",alignItems:"center",justifyContent:"center"}}>
           <button className="flex items-center gap-2 px-4 py-2   text-black rounded hover:bg-[rgba(14,73,71,1)] hover:text-white ">
-            <img src="/assets/icons/logout.svg" alt="Logout Icon" className="w-5 h-5" />
+            <img src="../../assets/StudentLoginImages/Counsprofile.jpg" alt="Logout Icon" className="w-5 h-5" />
             <span>STUDENT</span>
             </button>
         </div>
