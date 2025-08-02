@@ -4,9 +4,13 @@ import rmklogo from "../../assets/LandingPageImages/rmklogo.png";
 import StudentSidebar from './StudentSidebar';
 import './StudentDashboard.css';
 import { IoIosLogOut } from 'react-icons/io';
+import React,{useState} from 'react';
 
 
 const StudentDashboard = () => {
+const[isApprovedActive,setIsApprovedActive]=useState(false);
+const[isPendingActive,setIsPendingActive]=useState(false);
+const[isRejectedActive,setIsRejectedActive]=useState(false);
   return (
     <div className='flex'>
       <StudentSidebar />  
@@ -48,7 +52,7 @@ const StudentDashboard = () => {
 {/* Historical Overview + Status - Matches Profile Card Height */}
 <div style={{
   width: "100%",
-  height: "40%", 
+  height: "38%", 
   display: "flex",
   justifyContent: "center",
   alignItems: "flex-start",
@@ -59,7 +63,7 @@ const StudentDashboard = () => {
     width: "94%",
     height: "100%", 
     display: "flex",
-    gap: "2%",
+    gap: "1%",
     boxSizing: "border-box"
   }}>
     {/* Historical Overview */}
@@ -72,7 +76,7 @@ const StudentDashboard = () => {
       overflowY: "auto",
       boxSizing: "border-box"
     }}>
-      <h3 style={{ fontWeight: "600", fontSize: "18px", marginBottom: "10px" }}>Historical Overview</h3>
+      <h3 style={{ fontWeight: "600", fontSize: "18px", marginBottom: "10px" }}>HISTORICAL OVERVIEW</h3>
       <table style={{ width: "100%", borderCollapse: "collapse", borderRadius: "12px", overflow: "hidden" }}>
         <thead style={{ backgroundColor: "#f0f0f0" }}>
           <tr style={{ textAlign: "left" }}>
@@ -97,7 +101,7 @@ const StudentDashboard = () => {
 
     {/* Status Box */}
     <div style={{
-      width: "30%",
+      width: "40%",
       height: "100%",
       backgroundColor: "white",
       borderRadius: "20px",
@@ -108,11 +112,33 @@ const StudentDashboard = () => {
       boxSizing: "border-box",
       overflowY: "auto"
     }}>
-      <h3 style={{ fontWeight: "600", fontSize: "18px", marginBottom: "10px", textAlign: "center" }}>Status</h3>
+      <h3 style={{ fontWeight: "600", fontSize: "18px",marginBottom:"10px" }}>STATUS</h3>
       <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-        <div className="status-box status-approved">APPROVED</div>
-        <div className="status-box status-pending">PENDING</div>
-        <div className="status-box status-rejected">REJECTED</div>
+        <div className='status-box'
+        style={{
+          backgroundColor:isApprovedActive?"rgba(58, 133, 130, 1)":"#F5F5F5",
+          color:isApprovedActive?"white":"black"
+        }}
+        onClick={()=>setIsApprovedActive(prev=>!prev)}
+        >
+        APPROVED
+        </div>
+        <div className='status-box'
+        style={{backgroundColor:isPendingActive?"rgba(244, 239, 91, 1)":"#F5F5F5",
+          color:isPendingActive?"white":"black"
+        }}
+        onClick={()=>setIsPendingActive(prev=>!prev)}
+        >
+          PENDING
+        </div>
+        <div className='status-box'
+        style={{backgroundColor:isRejectedActive ? "rgba(242, 101, 104, 1)" :"#F5F5F5",
+          color:isRejectedActive?"white":"black"
+        }}
+        onClick={()=>setIsRejectedActive(prev=>!prev)}
+        >
+          REJECTED
+        </div>
       </div>
     </div>
   </div>
