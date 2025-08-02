@@ -80,9 +80,10 @@ const RegistrationPage = () => {
             </select>
           </div>
 
-          <div className="button-container">
-            <button type="submit">SUBMIT</button>
+          <div className="button-div">
+            <button className="button-container" type="submit">SUBMIT</button>
           </div>
+          
         </form>
       </div>
     </div>
