@@ -15,8 +15,8 @@ const App = () => {
       {/* <StudentDashboard /> */}
       {/* <FacultyLoginPage /> */}
       {/* <FacultyDashboardPage /> */}
-      {/* <FacultyApprovalList /> */}
-      <ViewForm />
+      <FacultyApprovalList />
+      {/* <ViewForm /> */}
     </div>
   )
 }
