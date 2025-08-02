@@ -3,6 +3,8 @@ import profilephoto from '../../assets/StudentLoginImages/dashimg3.webp';
 import rmklogo from "../../assets/LandingPageImages/rmklogo.png";
 import StudentSidebar from './StudentSidebar';
 import './StudentDashboard.css';
+import { IoIosLogOut } from 'react-icons/io';
+
 
 const StudentDashboard = () => {
   return (
@@ -11,7 +13,7 @@ const StudentDashboard = () => {
       <div style={{ width: "85%", height: "100vh" }}>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <img src={rmklogo} alt="logo" style={{ width: "9%", height: "9%", padding: "0.5%" }} />
-          <h1 style={{ fontSize: "15px", fontWeight: "bold", color: "#004d40", padding: "1% 0%" }}>INFORMATION TECHNOLOGY</h1>
+          <h1 style={{ fontSize: "15px", fontWeight: "bold", color: "#004d40", padding: "1% 1%" }}>INFORMATION TECHNOLOGY</h1>
         </div>
     {/*Profile Card */}
         <div style={{ width: "100%", height: "50%", display: "flex", justifyContent: "center" }}>
@@ -43,7 +45,7 @@ const StudentDashboard = () => {
             </div>
           </div>
         </div>
-        {/* Historical Overview + Status - Matches Profile Card Height */}
+{/* Historical Overview + Status - Matches Profile Card Height */}
 <div style={{
   width: "100%",
   height: "40%", 
@@ -108,7 +110,7 @@ const StudentDashboard = () => {
     }}>
       <h3 style={{ fontWeight: "600", fontSize: "18px", marginBottom: "10px", textAlign: "center" }}>Status</h3>
       <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-        <div className="status-box status-aaproved" >APPROVED</div>
+        <div className="status-box status-approved">APPROVED</div>
         <div className="status-box status-pending">PENDING</div>
         <div className="status-box status-rejected">REJECTED</div>
       </div>
@@ -116,8 +118,8 @@ const StudentDashboard = () => {
   </div>
 </div>
 
-      </div>
-    </div>
+</div>
+</div>
     
   
       

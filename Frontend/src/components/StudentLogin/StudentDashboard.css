@@ -20,7 +20,17 @@
     background-color: #ef9a9a;
 }
 
-.status-box:hover {
-  background-color: black;
+.status-approved:hover{
+  background-color: #66bb6a;
+  color: white;
+}
+
+.status-pending:hover{
+  background-color: #fdd835;
+  color: white;
+}
+
+.status-rejected:hover{
+  background-color: #e57373;
   color: white;
 }
