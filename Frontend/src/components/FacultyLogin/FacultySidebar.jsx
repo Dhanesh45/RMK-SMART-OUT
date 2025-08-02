@@ -1,8 +1,7 @@
-import { BiBarChartSquare ,BiSolidUserDetail } from "react-icons/bi";
 import { MdSpaceDashboard ,MdOutlineAppRegistration } from "react-icons/md";
-import { BsListCheck } from "react-icons/bs";
 import { IoIosLogOut } from "react-icons/io";
 import { CgProfile } from "react-icons/cg";
+import Profile from "../../assets/StudentLoginImages/profile.png"
 
 
 const FacultySidebar = ({setActivePage}) => {
@@ -22,26 +21,51 @@ const FacultySidebar = ({setActivePage}) => {
           {sidebarContents.map((content, index) => (
             <li
               key={index}
-              className="flex gap-[3%] list-none p-[5%] hover:bg-[#0E4947] hover:text-white rounded cursor-pointer"
+              className="group flex gap-[3%] list-none pt-[5%] pr-[0%] pb-[5%] pl-[10%] rounded cursor-pointer  hover:bg-[#0E4947] hover:text-[#ffffff] "
               onClick={() => setActivePage(content.name)}
             >
-              <span className="pt-[1%] text-xl font-bold">{content.icon}</span>
-              <span className="text-l font-bold">{content.name}</span>
+              <span className="pt-[1%] text-xl font-bold ">{content.icon}</span>
+              <span className="text-l font-bold ">{content.name}</span>
             </li>
           ))}
         </ul>
 
       </div>
       <div>
-        <button style={{margin:"0% 10% 0% 10% ",width:"80%",border:"none",backgroundColor:"rgba(14, 73, 71, 1)",color:"white",borderRadius:"20px",fontSize:'15px',fontWeight:"bold",padding:'2%',display:"flex",justifyContent:"center",alignItems:"center"}}>
+        <button style={{margin:"0% 10% 5% 10% ",width:"80%",border:"none",backgroundColor:"rgba(14, 73, 71, 1)",color:"white",borderRadius:"20px",fontSize:'15px',fontWeight:"bold",padding:'2%',display:"flex",justifyContent:"center",alignItems:"center"}}>
             Help
         </button>
-        <div style={{padding:"5% 0% 0% 0%",display:'flex',gap:"4px",alignItems:"center",justifyContent:"center"}}>
-          <button className="flex items-center gap-2 px-4 py-2   text-black rounded hover:bg-[rgba(14,73,71,1)]">
-            <img src="/assets/icons/logout.svg" alt="Logout Icon" className="w-5 h-5" />
-            <span>FACULTY</span>
-            </button>
-        </div>
+       <div className="py-4 flex justify-center">
+  <button
+  className="group flex items-center rounded-[24px]"
+  style={{
+    width: '70%',          // 80% of parent width
+    height: '8%',          // Adjust based on parent height
+    padding: '1% 2%',      // vertical and horizontal padding
+    gap: '4%',             // gap between image and text
+  }}
+>
+  <img
+    src={Profile}
+    alt="Faculty"
+    className="rounded-full object-cover"
+    style={{
+      width: '20%',         // 20% of button width
+      height: '100%',       // Full height of button
+    }}
+  />
+  <span
+    style={{
+      fontSize: '90%',       // Font size relative to container
+      fontWeight: '500',
+    }}
+  >
+    Faculty Name
+  </span>
+</button>
+
+</div>
+
         <button style={{margin:"4% 10% 10% 10%",width:"80%",border:"none",backgroundColor:"rgba(14, 73, 71, 1)",color:"white",borderRadius:"20px",fontSize:'15px',fontWeight:"bold",padding:'2%',display:"flex",gap:"10px",justifyContent:"center",alignItems:"center"}}>
           <IoIosLogOut />
           LOGOUT
