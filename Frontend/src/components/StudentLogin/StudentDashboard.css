@@ -1,0 +1,10 @@
+.status-box {
+  background-color: #a5d6a7;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+

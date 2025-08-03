@@ -5,7 +5,7 @@ import { GiTeacher } from "react-icons/gi";
 import { FaClipboardList } from "react-icons/fa";
 import { IoIosLogOut } from "react-icons/io";
 import { CgProfile } from "react-icons/cg";
-import { useState } from "react";
+
 import Profile from "../../assets/StudentLoginImages/profile.png"
 
 
@@ -23,7 +23,7 @@ const StudentSidebar = ({setActivePage}) => {
     },
   ];
 
-  const [click, setClick] = useState(false);
+  // const [click, setClick] = useState(false);
 
   return (
     <div
