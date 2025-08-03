@@ -1,9 +1,11 @@
 import { useState } from "react";
 import loginimg from "../../assets/StudentLoginImages/loginimg.jpg";
+import { useNavigate } from 'react-router-dom'
 
 const FacultyLoginPage = () => {
   const [isChecked, setIsChecked] = useState(false);
   const [role, setRole] = useState(""); // 👈 New state for role
+  const navigate = useNavigate();
 
   return (
     <div style={{ width: "100%", height: "100vh", display: "flex", justifyContent: "center", alignItems: "center", backgroundImage: 'linear-gradient(to right, rgba(27, 180, 109, 1), rgba(11, 78, 47, 1))' }}>
@@ -79,10 +81,7 @@ const FacultyLoginPage = () => {
             <div style={{ textAlign: "center" }}>
               <button
                 style={{ padding: "2% 30%", borderRadius: "30px", fontSize: "20px", fontWeight: "600", color: "white", backgroundColor: "rgba(17,73,71,1)" }}
-                onClick={() => {
-                  console.log("Selected Role:", role);
-                  navigate("/CounsellorDashboard");
-                }}
+                onClick={()=>navigate("/")}
               >
                 LOGIN
               </button>

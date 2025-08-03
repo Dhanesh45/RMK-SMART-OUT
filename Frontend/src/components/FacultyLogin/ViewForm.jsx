@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
 import FacultySidebar from './FacultySidebar'
 import rmklogo from "../../assets/LandingPageImages/rmklogo.png"
+import { useParams, useNavigate } from 'react-router-dom'
 
 const ViewForm = () => {
-
     const [permission, setPermission] = useState("");
+    const navigate = useNavigate();
+    const { regno } = useParams();
 
     const inputStyle = {
         width: "100%",
@@ -53,7 +55,7 @@ const ViewForm = () => {
                     overflowY: "auto"
                 }}>
                     <div style={{ display: "flex", justifyContent: "flex-end" }}>
-                        <button style={{
+                        <button onClick={() => navigate(-1)} style={{
                             border: "2px solid black",
                             borderRadius: "50%",
                             background: "none",
@@ -63,12 +65,14 @@ const ViewForm = () => {
                         }}>✖</button>
                     </div>
 
+                    <h3 style={{ textAlign: "center", marginBottom: "20px" }}>Viewing Form for Reg No: {regno}</h3>
+
                     <div style={{
                         display: "grid",
                         gridTemplateColumns: "1fr 1fr",
                         gap: "20px"
                     }}>
-                        {/* Row 1 */}
+                        {/* Inputs remain unchanged */}
                         <div style={{ width: "95%" }}>
                             <label>NAME</label>
                             <input type="text" style={inputStyle} />
@@ -99,7 +103,6 @@ const ViewForm = () => {
                             </div>
                         </div>
 
-                        {/* Row 2 */}
                         <div style={{ width: "95%" }}>
                             <label>REGISTRATION NUMBER</label>
                             <input type="text" style={inputStyle} />
@@ -114,7 +117,6 @@ const ViewForm = () => {
                             </datalist>
                         </div>
 
-                        {/* Row 3 */}
                         <div style={{ width: "95%" }}>
                             <label>EMAIL ADDRESS</label>
                             <input type="email" style={inputStyle} />
@@ -129,7 +131,6 @@ const ViewForm = () => {
                             </datalist>
                         </div>
 
-                        {/* Row 4 */}
                         <div style={{ width: "95%" }}>
                             <label>BRANCH</label>
                             <input type="text" style={inputStyle} />
@@ -149,7 +150,6 @@ const ViewForm = () => {
                             </div>
                         </div>
 
-                        {/* Row 5 */}
                         <div style={{ width: "95%" }}>
                             <label>NAME OF THE PARENT</label>
                             <input type="text" style={inputStyle} />
@@ -169,7 +169,6 @@ const ViewForm = () => {
                             </div>
                         </div>
 
-                        {/* Row 6 */}
                         <div style={{ width: "95%" }}>
                             <label>NATIVE</label>
                             <input type="text" style={inputStyle} />
@@ -179,7 +178,6 @@ const ViewForm = () => {
                             <input type="text" style={inputStyle} />
                         </div>
 
-                        {/* Row 7 */}
                         <div style={{ width: "95%" }}>
                             <label>PARENT'S MOBILE NO</label>
                             <input type="text" style={inputStyle} />
@@ -204,14 +202,12 @@ const ViewForm = () => {
                             </div>
                         </div>
 
-                        {/* Row 8 */}
                         <div style={{ gridColumn: "1 / span 2", width: "95%" }}>
                             <label>REMARKS</label>
                             <input type="text" style={{ ...inputStyle, width: "100%" }} />
                         </div>
                     </div>
 
-                    {/* Buttons */}
                     <div style={{ display: "flex", justifyContent: "center", marginTop: "30px", gap: "20px" }}>
                         <button style={approveBtn}>APPROVE</button>
                         <button style={rejectBtn}>REJECT</button>

@@ -1,7 +1,10 @@
 import LandingPagebg from "../../assets/LandingPageImages/landbg.jpg"
 import rmklogo from "../../assets/LandingPageImages/rmklogo.png"
+import { useNavigate } from 'react-router-dom'
 
 const HomePage = () => {
+
+  const navigate = useNavigate();
   return (
     <div
       style={{
@@ -21,6 +24,10 @@ const HomePage = () => {
           <div style={{textAlign:"center"}}>
             <p style={{fontSize:"20px",fontWeight:"bold",padding:"5%"}}>Our web application is a smart solution designed to streamline the process of outpass requests and attendance management for educational institutions. With a secure login system for students and staff, the platform enables students to request outpasses digitally, while faculty can review, approve, or reject them with ease. It also offers real-time attendance tracking, automated records, and insightful reports — reducing manual paperwork and improving overall efficiency.</p>
             
+          </div>
+          <div style={{width:"100%", display:"flex",justifyContent:"space-evenly"}}>
+            <button style={{ padding: "1% 3%", backgroundColor: "rgba(14, 73, 71, 1)", color: "white", fontWeight: "bold", fontSize: "14px", borderRadius: "25px", border: "none" }} onClick={()=>navigate("/")}>STUDENT</button>
+            <button style={{ padding: "1% 3%", backgroundColor: "rgba(14, 73, 71, 1)", color: "white", fontWeight: "bold", fontSize: "14px", borderRadius: "25px", border: "none" }} onClick={()=>navigate("/")}>FACULTY</button>
           </div>
         </div>
       

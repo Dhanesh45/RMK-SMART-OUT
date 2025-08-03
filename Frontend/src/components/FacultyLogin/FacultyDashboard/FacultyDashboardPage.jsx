@@ -4,9 +4,11 @@ import ProfilePhoto from "../../../assets/StudentLoginImages/profile.png"
 import OutpassChart from "./OutpassChart"
 import FacultySidebar from '../FacultySidebar'
 import DetailedStatus from './DetailedStatus'
+import { useNavigate } from 'react-router-dom'
 
 const FacultyDashboardPage = () => {
 
+    const navigate = useNavigate();
     return ( 
             <div className='flex'>
             <FacultySidebar />

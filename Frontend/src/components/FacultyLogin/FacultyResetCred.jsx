@@ -2,7 +2,7 @@ import { useState } from "react"
 import loginimg from "../../assets/StudentLoginImages/loginimg.jpg"
 import {useNavigate} from "react-router-dom"
 
-const ResetCred= () => {  
+const FacultyResetCred= () => {  
   const navigate = useNavigate();
   const [isChecked, setIsChecked] = useState(false);
     return (
@@ -88,4 +88,4 @@ const ResetCred= () => {
   )
 }
 
-export default ResetCred;
+export default FacultyResetCred;

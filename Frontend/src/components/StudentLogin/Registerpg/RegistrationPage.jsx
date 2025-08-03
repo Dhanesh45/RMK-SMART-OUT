@@ -81,7 +81,7 @@ const RegistrationPage = () => {
           </div>
 
           <div className="button-div">
-            <button className="button-container" type="submit">SUBMIT</button>
+            <button className="button-container" type="submit" onClick={()=>navigate("/")}>SUBMIT</button>
           </div>
           
         </form>

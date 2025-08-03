@@ -3,6 +3,7 @@ import loginimg from "../../assets/StudentLoginImages/loginimg.jpg"
 import { useNavigate } from "react-router-dom";
 
 const StudentLoginPage = () => {  
+  const navigate = useNavigate();
   const [isChecked, setIsChecked] = useState(false);
     return (
     <div style={{ width: "100vw", height: "100vh", display: "flex", justifyContent: "center", alignItems: "center", backgroundImage: 'linear-gradient(to right, rgba(27, 180, 109, 1), rgba(11, 78, 47, 1)'}}>
@@ -52,7 +53,8 @@ const StudentLoginPage = () => {
             </div>
 
             <div style={{ textAlign: "center" }}>
-              <button style={{ padding: "2% 30%", borderRadius: "30px", fontSize: "20px", fontWeight: "600", color: "white", backgroundColor: "rgba(17,73,71,17)" }} >
+              <button style={{ padding: "2% 30%", borderRadius: "30px", fontSize: "20px", fontWeight: "600", color: "white", backgroundColor: "rgba(17,73,71,17)" }} 
+               onClick={()=>navigate("/")}>
                 LOGIN
               </button>
             </div>

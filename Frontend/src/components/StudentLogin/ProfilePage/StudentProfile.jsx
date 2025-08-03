@@ -3,6 +3,7 @@ import './StudentProfile.css';
 import profile from "../../../assets/StudentLoginImages/Counsprofile.jpg";
 import RMKlogo from "../../../assets/LandingPageImages/rmklogo.png";
 import StudentSidebar from '../StudentSidebar';
+import { useNavigate } from 'react-router-dom'
 
 function StudentProfile({ onClose }) {
   const [isEditing, setIsEditing] = useState(false);
