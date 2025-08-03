@@ -1,10 +1,9 @@
-import dashphoto from "../../assets/StudentLoginImages/dhashimg1.jpg";
-import profilephoto from "../../assets/StudentLoginImages/dashimg3.webp";
-import rmklogo from "../../assets/LandingPageImages/rmklogo.png";
-import StudentSidebar from "./StudentSidebar";
+import dashphoto from "../../../assets/StudentLoginImages/dhashimg1.jpg";
+import profilephoto from "../../../assets/StudentLoginImages/dashimg3.webp";
+import rmklogo from "../../../assets/LandingPageImages/rmklogo.png";
+import StudentSidebar from "../StudentSidebar";
 import "./StudentDashboard.css";
-import { IoIosLogOut } from "react-icons/io";
-import React, { useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const StudentDashboard = () => {
@@ -139,8 +138,8 @@ const StudentDashboard = () => {
             {/* Historical Overview */}
             <div
               style={{
-                width: "65%",
-                height: "100%",
+                width: "60%",
+                height: "90%",
                 backgroundColor: "white",
                 borderRadius: "20px",
                 padding: "2%",
@@ -190,7 +189,7 @@ const StudentDashboard = () => {
             <div
               style={{
                 width: "40%",
-                height: "100%",
+                height: "90%",
                 backgroundColor: "white",
                 borderRadius: "20px",
                 padding: "2%",

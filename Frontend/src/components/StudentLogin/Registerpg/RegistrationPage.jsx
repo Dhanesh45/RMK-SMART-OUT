@@ -1,8 +1,11 @@
 import React from "react";
 import "./RegistrationPage.css"; 
+import { useNavigate } from "react-router-dom";
 
 const RegistrationPage = () => {
+  const navigate=useNavigate();
   return (
+    
     <div className="whole">
       <div className="registration-container">
         <h1>REGISTRATION FORM</h1>
@@ -81,11 +84,13 @@ const RegistrationPage = () => {
           </div>
 
           <div className="button-div">
-            <button className="button-container" type="submit" onClick={()=>navigate("/")}>SUBMIT</button>
+            <button className="button-container"  onClick={()=>navigate("/student-dashboard")}>SUBMIT</button>
           </div>
           
         </form>
+        
       </div>
+      
     </div>
   );
 };

@@ -16,21 +16,21 @@ const StudentLoginPage = () => {
 
         {/* Form part */}
         <div className="form-scroll" style={{ width: "50%", height: "100%", padding: "2% 0%", overflowY: "auto" }}>
-          <h1 style={{ textAlign: "center", fontWeight: "800", fontSize: "40px", color: "rgba(14, 73, 71, 1)", paddingBottom: "3%" }}>STUDENT LOGIN</h1>
-          <p style={{ textAlign: "center", fontSize: "20px", paddingBottom: "1%", fontWeight: "600", color: "rgba(17,73,71,1)" }}>Welcome to student details Login to access your account</p>
+          <h1 style={{ textAlign: "center", fontWeight: "800", fontSize: "35px", color: "rgba(14, 73, 71, 1)", paddingBottom: "3%" }}>STUDENT LOGIN</h1>
+          <p style={{ textAlign: "center", fontSize: "18px", paddingBottom: "1%", fontWeight: "600", color: "rgba(17,73,71,1)" }}>Welcome to student details Login to access your account</p>
 
           {/* input feilds */}
           <div style={{ padding: "3% 5% 5% 5%" }}>
-            <div style={{ paddingBottom: "4%" }}>
+            {/* <div style={{ paddingBottom: "4%" }}>
               <p style={{ fontSize: "20px", fontWeight: "600", paddingBottom: "0.8%", color: "rgba(14, 73, 71, 1)" }}>REGISTER NUMBER</p>
               <input type="number" style={{ width: "97%", padding: "1.25%", borderRadius: "5px", border: "1px solid rgba(14, 73, 71, 1)", fontSize: "20px", fontWeight: "500" }} />
-            </div>
+            </div> */}
             <div style={{ paddingBottom: "4%" }}>
-              <p style={{ fontSize: "20px", fontWeight: "600", paddingBottom: "0.8%", color: "rgba(14, 73, 71, 1)" }}>EMAIL</p>
+              <p style={{ fontSize: "18px", fontWeight: "600", paddingBottom: "0.8%", color: "rgba(14, 73, 71, 1)" }}>EMAIL</p>
               <input type="email" style={{ width: "97%", padding: "1.25%", borderRadius: "5px", border: "1px solid rgba(14, 73, 71, 1)", fontSize: "20px", fontWeight: "500" }} />
             </div>
             <div style={{ paddingBottom: "1%" }}>
-              <p style={{ fontSize: "20px", fontWeight: "600", paddingBottom: "0.8%", color: "rgba(14, 73, 71, 1)" }}>PASSWORD</p>
+              <p style={{ fontSize: "18px", fontWeight: "600", paddingBottom: "0.8%", color: "rgba(14, 73, 71, 1)" }}>PASSWORD</p>
               <input type={isChecked ? "text" : "password"} style={{ width: "97%", padding: "1.25%", borderRadius: "5px", border: "1px solid rgba(14, 73, 71, 1)", fontSize: "20px", fontWeight: "500" }} />
             </div>
             <div style={{ display: "flex", justifyContent: "space-between", paddingBottom: "5%" }}>
@@ -45,18 +45,21 @@ const StudentLoginPage = () => {
                     </svg>
                   )}
                 </span>
-                <p style={{ fontWeight: "650", paddingLeft: "10px", color: "rgba(17,73,71,1)", marginBottom: "0" }}>
+                <p style={{ fontWeight: "600", paddingLeft: "10px", color: "rgba(17,73,71,1)", marginBottom: "0" }}>
                   SHOW PASSWORD
                 </p>
               </label>
-              <a href="" style={{ color: "rgba(82, 179, 134, 1)", fontWeight: "600" }}>Forget Password?</a>
+              <a href="" style={{ color: "rgba(82, 179, 134, 1)", fontWeight: "600" }} onClick={()=>navigate("/reset-pass")}>Forget Password?</a>
             </div>
 
             <div style={{ textAlign: "center" }}>
-              <button style={{ padding: "2% 30%", borderRadius: "30px", fontSize: "20px", fontWeight: "600", color: "white", backgroundColor: "rgba(17,73,71,17)" }} 
-               onClick={()=>navigate("/")}>
+              <button style={{cursor:"pointer", padding: "2% 30%", borderRadius: "30px", fontSize: "20px", fontWeight: "600", color: "white", backgroundColor: "rgba(17,73,71,17)" }} 
+               onClick={()=>navigate("/student-dashboard")}>
                 LOGIN
               </button>
+            </div>
+            <div className="flex item-center justify-center p-[2%]">
+              <p style={{color: "rgba(30, 30, 30, 0.41)",fontWeight:"600"}}>Dont have an account? <a href="" style={{color:"rgba(82, 179, 134, 1)",fontWeight:"600"}} onClick={()=>navigate("/register")}>Register Now</a></p>
             </div>
           </div>
         </div>

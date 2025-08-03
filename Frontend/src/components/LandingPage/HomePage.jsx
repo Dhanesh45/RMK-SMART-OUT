@@ -26,8 +26,8 @@ const HomePage = () => {
             
           </div>
           <div style={{width:"100%", display:"flex",justifyContent:"space-evenly"}}>
-            <button style={{ padding: "1% 3%", backgroundColor: "rgba(14, 73, 71, 1)", color: "white", fontWeight: "bold", fontSize: "14px", borderRadius: "25px", border: "none" }} onClick={()=>navigate("/")}>STUDENT</button>
-            <button style={{ padding: "1% 3%", backgroundColor: "rgba(14, 73, 71, 1)", color: "white", fontWeight: "bold", fontSize: "14px", borderRadius: "25px", border: "none" }} onClick={()=>navigate("/")}>FACULTY</button>
+            <button style={{ padding: "1% 3%", backgroundColor: "rgba(14, 73, 71, 1)", color: "white", fontWeight: "bold", fontSize: "14px", borderRadius: "25px", border: "none", cursor:"pointer"}} onClick={()=>navigate("/student-login")}>STUDENT</button>
+            <button style={{ padding: "1% 3%", backgroundColor: "rgba(14, 73, 71, 1)", color: "white", fontWeight: "bold", fontSize: "14px", borderRadius: "25px", border: "none" ,cursor:"pointer"}} onClick={()=>navigate("/faculty-login")}>FACULTY</button>
           </div>
         </div>
       

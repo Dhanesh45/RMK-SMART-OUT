@@ -7,11 +7,12 @@ import { IoIosLogOut } from "react-icons/io";
 import { CgProfile } from "react-icons/cg";
 
 import Profile from "../../assets/StudentLoginImages/profile.png"
+import { useNavigate } from "react-router-dom";
 
 
 const StudentSidebar = ({setActivePage}) => {
 
- 
+ const navigate=useNavigate();
   const sidebarContents = [
     {
       icon: <MdSpaceDashboard />,
@@ -57,7 +58,7 @@ const StudentSidebar = ({setActivePage}) => {
               className="group flex gap-[3%] list-none pt-[5%] pr-[0%] pb-[5%] pl-[10%] rounded cursor-pointer  hover:bg-[#0E4947] hover:text-[#ffffff]"
               onClick={()=>setActivePage(content.name)}
             >
-              <span className="pt-[0%] text-xl font-bold">{content.icon}</span>
+              <span className="pt-[1%] text-xl font-bold">{content.icon}</span>
               <span className="text-l font-bold">{content.name}</span>
             </li>
           ))}
@@ -66,7 +67,7 @@ const StudentSidebar = ({setActivePage}) => {
 
       <div>
         <div>
-        <button style={{margin:"0% 10% 5% 10% ",width:"80%",border:"none",backgroundColor:"rgba(14, 73, 71, 1)",color:"white",borderRadius:"20px",fontSize:'15px',fontWeight:"bold",padding:'2%',display:"flex",justifyContent:"center",alignItems:"center"}}>
+        <button style={{margin:"0% 10% 5% 10% ",width:"80%",border:"none",backgroundColor:"rgba(14, 73, 71, 1)",color:"white",borderRadius:"20px",fontSize:'15px',fontWeight:"bold",padding:'2%',display:"flex",justifyContent:"center",alignItems:"center",cursor:"pointer"}}>
                    Help
                </button>
               <div className="py-4 flex justify-center">
@@ -76,8 +77,11 @@ const StudentSidebar = ({setActivePage}) => {
            width: '70%',          // 80% of parent width
            height: '8%',          // Adjust based on parent height
            padding: '1% 2%',      // vertical and horizontal padding
-           gap: '4%',             // gap between image and text
+           gap: '4%', 
+           cursor:"pointer",
+           backgroundColor:"white"            // gap between image and text
          }}
+        onClick={()=>navigate("/student-profile")}
        >
          <img
            src={Profile}
@@ -85,7 +89,8 @@ const StudentSidebar = ({setActivePage}) => {
            className="rounded-full object-cover"
            style={{
              width: '20%',         // 20% of button width
-             height: '100%',       // Full height of button
+             height: '100%', 
+             border:"1px solid black"      // Full height of button
            }}
          />
          <span
@@ -98,7 +103,8 @@ const StudentSidebar = ({setActivePage}) => {
          </span>
        </button>
         </div>
-        <button style={{margin:"4% 10% 10% 10%",width:"80%",border:"none",backgroundColor:"rgba(14, 73, 71, 1)",color:"white",borderRadius:"20px",fontSize:'15px',fontWeight:"bold",padding:'2%',display:"flex",gap:"10px",justifyContent:"center",alignItems:"center"}}>
+        <button style={{margin:"4% 10% 10% 10%",width:"80%",border:"none",backgroundColor:"rgba(14, 73, 71, 1)",color:"white",borderRadius:"20px",fontSize:'15px',fontWeight:"bold",padding:'2%',display:"flex",gap:"10px",justifyContent:"center",alignItems:"center", cursor:"pointer"}}
+        onClick={()=>navigate("/")}>
           <IoIosLogOut />
           LOGOUT
         </button>

@@ -32,7 +32,7 @@ const FacultySidebar = ({setActivePage}) => {
 
       </div>
       <div>
-        <button style={{margin:"0% 10% 5% 10% ",width:"80%",border:"none",backgroundColor:"rgba(14, 73, 71, 1)",color:"white",borderRadius:"20px",fontSize:'15px',fontWeight:"bold",padding:'2%',display:"flex",justifyContent:"center",alignItems:"center"}}>
+        <button style={{margin:"0% 10% 5% 10% ",width:"80%",border:"none",backgroundColor:"rgba(14, 73, 71, 1)",color:"white",borderRadius:"20px",fontSize:'15px',fontWeight:"bold",padding:'2%',display:"flex",justifyContent:"center",alignItems:"center",cursor:"pointer"}}>
             Help
         </button>
        <div className="py-4 flex justify-center">
@@ -43,6 +43,8 @@ const FacultySidebar = ({setActivePage}) => {
     height: '8%',          // Adjust based on parent height
     padding: '1% 2%',      // vertical and horizontal padding
     gap: '4%',             // gap between image and text
+    backgroundColor:"white",
+    cursor:"pointer"
   }}
 >
   <img
@@ -66,7 +68,8 @@ const FacultySidebar = ({setActivePage}) => {
 
 </div>
 
-        <button style={{margin:"4% 10% 10% 10%",width:"80%",border:"none",backgroundColor:"rgba(14, 73, 71, 1)",color:"white",borderRadius:"20px",fontSize:'15px',fontWeight:"bold",padding:'2%',display:"flex",gap:"10px",justifyContent:"center",alignItems:"center"}}>
+        <button style={{margin:"4% 10% 10% 10%",width:"80%",border:"none",backgroundColor:"rgba(14, 73, 71, 1)",color:"white",borderRadius:"20px",fontSize:'15px',fontWeight:"bold",padding:'2%',display:"flex",gap:"10px",justifyContent:"center",alignItems:"center",cursor:"pointer"}}
+        onClick={()=>navigate()}>
           <IoIosLogOut />
           LOGOUT
         </button>

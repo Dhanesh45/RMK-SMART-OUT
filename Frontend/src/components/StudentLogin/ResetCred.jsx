@@ -56,8 +56,8 @@ const ResetCred= () => {
               <button style={{ padding: "2% 30%", borderRadius: "30px", fontSize: "20px", fontWeight: "600", color: "white", backgroundColor: "rgba(17,73,71,17)" }} >
                 VERIFY NOW
               </button>
-              <div style={{display:"flex", justifyContent:"center"}}>
-              <p style={{ color: "rgba(30, 30, 30, 0.41)", fontWeight: "600" }}>Otherwsie?  </p><a href=" " style={{color: " rgba(27, 180, 109, 1) "}}>Login</a>
+              <div style={{display:"flex", justifyContent:"center", padding:"1.5%"}}>
+              <p style={{ color: "rgba(30, 30, 30, 0.41)", fontWeight: "600" }}>Otherwsie?  </p><a href=" " style={{color: " rgba(27, 180, 109, 1) " , fontWeight:"600"}}>Login</a>
             </div>
             </div>
           </div>

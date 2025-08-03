@@ -57,7 +57,7 @@ const FacultyResetCred= () => {
                 VERIFY NOW
               </button>
               <div style={{display:"flex", justifyContent:"center"}}>
-              <p style={{ color: "rgba(30, 30, 30, 0.41)", fontWeight: "600" }}>Otherwsie?  </p><a href=" " style={{color: " rgba(27, 180, 109, 1) "}}>Login</a>
+              <p style={{ color: "rgba(30, 30, 30, 0.41)", fontWeight: "600" }}>Otherwsie?  </p><a href=" " style={{color: " rgba(27, 180, 109, 1) "}} onClick={()=>navigate()}>Login</a>
             </div>
             </div>
           </div>

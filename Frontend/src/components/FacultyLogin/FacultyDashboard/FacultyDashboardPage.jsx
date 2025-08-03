@@ -28,8 +28,8 @@ const FacultyDashboardPage = () => {
                             <img src={ProfilePhoto} alt="profilephoto" style={{ width: "100%", height: "100%", borderRadius: "50%", border: "7px solid white" }}></img>
                         </div>
                         <div style={{ width: "100%", height: "54%", padding: "4% 0% 0% 7%" }}>
-                            <h1 style={{ paddingBottom: "1%", fontSize: "25px", fontWeight: "bold" }}>FACULTY NAME</h1>
-                            <p style={{ paddingBottom: "2.5%", fontSize: "15px", color: "gray" }}>faculty@gmail.com</p>
+                            <h1 style={{ paddingBottom: "0.35%", fontSize: "25px", fontWeight: "bold" }}>FACULTY NAME</h1>
+                            <p style={{ paddingBottom: "0.35%", fontSize: "15px", color: "gray" }}>faculty@gmail.com</p>
                             <p style={{ fontSize: "15px", fontWeight: "600" }}> Number of Students: 21   |   Degree : B.Tech - Information Technology  |   College :R.M.K. Group of Institutions</p>
                         </div>
                     </div>

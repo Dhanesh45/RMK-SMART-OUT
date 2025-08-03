@@ -74,14 +74,14 @@ const FacultyLoginPage = () => {
                 </p>
               </label>
 
-              <a href="#" style={{ color: "rgba(82, 179, 134, 1)", fontWeight: "600" }}>Forget Password?</a>
+              <a href="#" style={{ color: "rgba(82, 179, 134, 1)", fontWeight: "600" }} onClick={()=>navigate("/faculty-reset")}>Forget Password?</a>
             </div>
 
             {/* Login button */}
             <div style={{ textAlign: "center" }}>
               <button
                 style={{ padding: "2% 30%", borderRadius: "30px", fontSize: "20px", fontWeight: "600", color: "white", backgroundColor: "rgba(17,73,71,1)" }}
-                onClick={()=>navigate("/")}
+                onClick={()=>navigate("/faculty-dashboard")}
               >
                 LOGIN
               </button>
