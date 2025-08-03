@@ -11,14 +11,14 @@ import RegistrationPage from './components/StudentLogin/Registerpg/RegistrationP
 const App = () => {
   return (
     <div>
-      {/* <HomePage /> */}
-      {/* <StudentLoginPage /> */}
-      {/* <StudentDashboard /> */}
-      {/* <FacultyLoginPage /> */}
-      {/* <FacultyDashboardPage /> */}
+      <HomePage />
+      <StudentLoginPage />
+      <StudentDashboard />
+      <FacultyLoginPage />
+      <FacultyDashboardPage />
       <FacultyApprovalList />
-      {/* <RegistrationPage/> */}
-      {/* <ViewForm /> */}
+      <RegistrationPage/>
+      <ViewForm />
     </div>
   )
 }
