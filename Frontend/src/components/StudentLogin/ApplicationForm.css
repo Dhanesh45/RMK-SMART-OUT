@@ -14,6 +14,7 @@ body {
   font-size: 14px;
 }
 
+
 .logout {
   margin-top: 10px;
   background-color: #158e74;
@@ -33,16 +34,18 @@ body {
 
 .info {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 1rem;
-  padding: 1rem 1.5rem;
 }
 
 .logo {
-  height: 60px;
+   padding: 0.5%;
+  width: 15%;
+  height: 9%;
 }
 
 header {
+  padding-right: 3%;
   font-size: 28px;
   font-weight: bold;
   color: #0E4947; /* RMK green */
