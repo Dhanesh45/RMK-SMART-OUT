@@ -1,8 +1,8 @@
 import { useState } from "react"
 import loginimg from "../../assets/StudentLoginImages/loginimg.jpg"
-import { useNavigate } from "react-router-dom";
 
-const StudentLoginPage = () => {  
+
+const ResetCred= () => {  
   const [isChecked, setIsChecked] = useState(false);
     return (
     <div style={{ width: "100vw", height: "100vh", display: "flex", justifyContent: "center", alignItems: "center", backgroundImage: 'linear-gradient(to right, rgba(27, 180, 109, 1), rgba(11, 78, 47, 1)'}}>
@@ -15,22 +15,22 @@ const StudentLoginPage = () => {
 
         {/* Form part */}
         <div className="form-scroll" style={{ width: "50%", height: "100%", padding: "2% 0%", overflowY: "auto" }}>
-          <h1 style={{ textAlign: "center", fontWeight: "800", fontSize: "40px", color: "rgba(14, 73, 71, 1)", paddingBottom: "3%" }}>STUDENT LOGIN</h1>
-          <p style={{ textAlign: "center", fontSize: "20px", paddingBottom: "1%", fontWeight: "600", color: "rgba(17,73,71,1)" }}>Welcome to student details Login to access your account</p>
+          <h1 style={{ textAlign: "center", fontWeight: "800", fontSize: "40px", color: "rgba(14, 73, 71, 1)", paddingBottom: "3%" }}>RESET CREDENTIALS</h1>
+          <p style={{ textAlign: "center", fontSize: "20px", paddingBottom: "1%", fontWeight: "600", color: "rgba(17,73,71,1)" }}>Use this form to Reset your Password</p>
 
           {/* input feilds */}
           <div style={{ padding: "3% 5% 5% 5%" }}>
             <div style={{ paddingBottom: "4%" }}>
-              <p style={{ fontSize: "20px", fontWeight: "600", paddingBottom: "0.8%", color: "rgba(14, 73, 71, 1)" }}>REGISTER NUMBER</p>
+              <p style={{ fontSize: "20px", fontWeight: "600", paddingBottom: "0.8%", color: "rgba(14, 73, 71, 1)" }}>ROLL.NO</p>
               <input type="number" style={{ width: "97%", padding: "1.25%", borderRadius: "5px", border: "1px solid rgba(14, 73, 71, 1)", fontSize: "20px", fontWeight: "500" }} />
             </div>
             <div style={{ paddingBottom: "4%" }}>
-              <p style={{ fontSize: "20px", fontWeight: "600", paddingBottom: "0.8%", color: "rgba(14, 73, 71, 1)" }}>EMAIL</p>
-              <input type="email" style={{ width: "97%", padding: "1.25%", borderRadius: "5px", border: "1px solid rgba(14, 73, 71, 1)", fontSize: "20px", fontWeight: "500" }} />
+              <p style={{ fontSize: "20px", fontWeight: "600", paddingBottom: "0.8%", color: "rgba(14, 73, 71, 1)" }}>ENTER NEW PASSWORD</p>
+              <input type={isChecked ? "text" : "password"} style={{ width: "97%", padding: "1.25%", borderRadius: "5px", border: "1px solid rgba(14, 73, 71, 1)", fontSize: "20px", fontWeight: "500" }} placeholder="Enter a strong password..."/>
             </div>
             <div style={{ paddingBottom: "1%" }}>
-              <p style={{ fontSize: "20px", fontWeight: "600", paddingBottom: "0.8%", color: "rgba(14, 73, 71, 1)" }}>PASSWORD</p>
-              <input type={isChecked ? "text" : "password"} style={{ width: "97%", padding: "1.25%", borderRadius: "5px", border: "1px solid rgba(14, 73, 71, 1)", fontSize: "20px", fontWeight: "500" }} />
+              <p style={{ fontSize: "20px", fontWeight: "600", paddingBottom: "0.8%", color: "rgba(14, 73, 71, 1)" }}>CONFIRM NEW PASSWORD</p>
+              <input type={isChecked ? "text" : "password"} style={{ width: "97%", padding: "1.25%", borderRadius: "5px", border: "1px solid rgba(14, 73, 71, 1)", fontSize: "20px", fontWeight: "500" }} placeholder="Re-type the password..." />
             </div>
             <div style={{ display: "flex", justifyContent: "space-between", paddingBottom: "5%" }}>
               <label style={{ display: "flex", alignItems: "center", cursor: "pointer", userSelect: "none" }}>
@@ -48,13 +48,16 @@ const StudentLoginPage = () => {
                   SHOW PASSWORD
                 </p>
               </label>
-              <a href="" style={{ color: "rgba(82, 179, 134, 1)", fontWeight: "600" }}>Forget Password?</a>
+              
             </div>
 
             <div style={{ textAlign: "center" }}>
               <button style={{ padding: "2% 30%", borderRadius: "30px", fontSize: "20px", fontWeight: "600", color: "white", backgroundColor: "rgba(17,73,71,17)" }} >
-                LOGIN
+                VERIFY NOW
               </button>
+              <div style={{display:"flex", justifyContent:"center"}}>
+              <p style={{ color: "rgba(30, 30, 30, 0.41)", fontWeight: "600" }}>Otherwsie?  </p><a href=" " style={{color: " rgba(27, 180, 109, 1) "}}>Login</a>
+            </div>
             </div>
           </div>
         </div>
@@ -84,4 +87,4 @@ const StudentLoginPage = () => {
   )
 }
 
-export default StudentLoginPage;
+export default ResetCred;
