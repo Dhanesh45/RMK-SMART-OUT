@@ -7,14 +7,12 @@
 
 .top-bar {
   position: absolute;
-  top: 10px;
+  top: 1.5vh; /* responsive top spacing */
   left: 230px;
   right: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; /* ✅ Ensures wrapping on small screens */
-  gap: 1rem;
 }
 
 .rmk-logo {
@@ -26,19 +24,20 @@
   font-size: 1.8rem;
   font-weight: bold;
   color: #004b3f;
-  margin-left: auto;
+  margin-left: 2rem; /* replaces absolute top/right */
 }
 
 .student-profile-card {
   margin: auto;
   background: white;
-  width: 1000px; /* ❌ Hardcoded width causes overflow */
-  max-width: 95%; /* ✅ Responsive max width */
+  width: 1000px;
   border-radius: 20px;
   padding: 2rem;
-  position: relative;
-  top: 20px;
+  min-height: 80vh; /* responsive height */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .profile-image {
@@ -60,12 +59,12 @@
   position: absolute;
   top: 1rem;
   right: 1rem;
-  background-color:rgba(255, 0, 0, 0.658);
+  background-color: rgba(255, 0, 0, 0.658);
   color: white;
   padding: 0.6rem 1.5rem;
   font-size: 1rem;
   border: none;
-  border-radius:50%;
+  border-radius: 50%;
   cursor: pointer;
 }
 
@@ -73,21 +72,24 @@
   background-color: rgb(255, 0, 0);
 }
 
- .form-section {
+.form-section {
   display: flex;
   gap: 2rem;
   justify-content: space-between;
-} 
+  flex-wrap: wrap;
+}
 
-.form-left, .form-right {
+.form-left,
+.form-right {
   flex: 1;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  bottom: 10%;
+  padding-bottom: 2vh; /* responsive */
 }
 
-input, select {
+input,
+select {
   padding: 0.5rem;
   border-radius: 6px;
   border: 1px solid #ccc;
@@ -104,7 +106,7 @@ input, select {
 
 .button-row {
   display: flex;
-  justify-content:flex-end;
+  justify-content: flex-end;
   margin-top: 2rem;
 }
 
@@ -120,4 +122,16 @@ input, select {
 
 .action-btn:hover {
   background-color: #006b5f;
+}
+
+/* Optional: Tweaks only for larger vertical screens (like 1920x1200) */
+@media screen and (min-height: 1190px) {
+  .student-profile-card {
+    padding-top: 4rem;
+    min-height: 75vh;
+  }
+
+  .top-bar {
+    top: 2vh;
+  }
 }
