@@ -16,10 +16,10 @@ const App = () => {
       {/* <HomePage /> */}
       {/* <StudentLoginPage /> */}
      {/* <StudentDashboard />*/}
-      <FacultyLoginPage /> 
+      {/* <FacultyLoginPage />  */}
       {/* <FacultyDashboardPage /> */}
-      <FacultyApprovalList />
-      <RegistrationPage/>
+      {/* <FacultyApprovalList />
+      <RegistrationPage/> */}
       {/* <ViewForm /> */}
       {/*<Learn /> */}
       <StudentProfile />

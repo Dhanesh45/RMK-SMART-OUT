@@ -13,7 +13,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+  flex-wrap: wrap; /* ✅ Ensures wrapping on small screens */
+  gap: 1rem;
 }
 
 .rmk-logo {
@@ -25,14 +26,14 @@
   font-size: 1.8rem;
   font-weight: bold;
   color: #004b3f;
-  right: 500px;
-  top: 70px;
+  margin-left: auto;
 }
 
 .student-profile-card {
   margin: auto;
   background: white;
-  width: 1000px;
+  width: 1000px; /* ❌ Hardcoded width causes overflow */
+  max-width: 95%; /* ✅ Responsive max width */
   border-radius: 20px;
   padding: 2rem;
   position: relative;
