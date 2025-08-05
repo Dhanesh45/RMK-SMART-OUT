@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import StudentSidebar from './StudentSidebar'
 import StudentDashboard from './studentDash/StudentDashboard'
-import ApplicationForm from './ApplicationForm'
+import ApplicationForm from '../StudentLogin/AppForm/ApplicationForm'
 
 const StudDash = () => {
     const [activePage,setActivePage]=useState("DASHBOARD")

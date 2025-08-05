@@ -13,6 +13,7 @@ import ResetCred from './components/StudentLogin/ResetCred';
 import FacultyResetCred from './components/FacultyLogin/FacultyResetCred';
 import FacDash from './components/FacultyLogin/FacDash';
 import StudDash from './components/StudentLogin/StudDash';
+import StudentHelp from './components/StudentLogin/StudentHelp';
 
 
 const App = () => {
@@ -34,6 +35,7 @@ const App = () => {
         <Route path="/view-form/:regno" element={<ViewForm />} />
         <Route path="faculty-reset" element={<FacultyResetCred />}/>
         <Route path="/faculty-dashboard" element={<FacDash />}/>
+        <Route path="/stu-help" element={<StudentHelp />}/>
       </Routes>
     </Router>
   );

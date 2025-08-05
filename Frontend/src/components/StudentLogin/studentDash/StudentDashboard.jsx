@@ -1,7 +1,6 @@
 import dashphoto from "../../../assets/StudentLoginImages/dhashimg1.jpg";
 import profilephoto from "../../../assets/StudentLoginImages/dashimg3.webp";
 import rmklogo from "../../../assets/LandingPageImages/rmklogo.png";
-import StudentSidebar from "../StudentSidebar";
 import "./StudentDashboard.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";

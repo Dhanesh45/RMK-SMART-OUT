@@ -11,7 +11,7 @@ const FacultyDashboardPage = () => {
     const navigate = useNavigate();
     return ( 
            
-            <div style={{ width: "85%", height: "100vh", backgroundColor: "rgba(238, 238, 238, 0.5)" }}>
+            <div style={{ width: "85%", height: "100vh", backgroundColor: "rgba(238, 238, 238, 0.1)" }}>
                 {/* header */}
                 <div style={{ display: "flex", justifyContent: "space-between" }}>
                     <img src={RmkLogo} alt="rmklogo" width="9%" height="9%" style={{ padding: "0.5%" }}></img>
