@@ -1,7 +1,4 @@
 import React, { useState } from 'react';
-import StudentSidebar from './StudentSidebar'; // adjust path
-import Dashboard from './Dashboard'; // your actual component
-import OutpassForm from './OutpassForm'; // your actual component
 import FacultyDashboardPage from './FacultyDashboard/FacultyDashboardPage';
 import FacultyApprovalList from './FacultyApprovalList';
 import FacultySidebar from './FacultySidebar';
@@ -23,9 +20,7 @@ const FacDash = () => {
   return (
     <div style={{ display: 'flex', height: '100vh' }}>
       <FacultySidebar setActivePage={setActivePage}/>
-      <div style={{ width: '85%', padding: '20px' }}>
         {renderContent()}
-      </div>
     </div>
   );
 };

@@ -74,7 +74,7 @@ const StudentSidebar = ({setActivePage}) => {
          <button
          className="group flex items-center rounded-[24px]"
          style={{
-           width: '70%',          // 80% of parent width
+           width: '80%',          // 80% of parent width
            height: '8%',          // Adjust based on parent height
            padding: '1% 2%',      // vertical and horizontal padding
            gap: '4%', 
@@ -99,7 +99,7 @@ const StudentSidebar = ({setActivePage}) => {
              fontWeight: '500',
            }}
          >
-           Student Name
+           Stude
          </span>
        </button>
         </div>

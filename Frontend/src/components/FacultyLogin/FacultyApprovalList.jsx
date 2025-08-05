@@ -82,8 +82,6 @@ const FacultyApprovalList = () => {
     }
 
     return (
-        <div className="flex">
-            <FacultySidebar />
             <div style={{ width: "85%", height: "100vh", backgroundColor: "rgba(238, 238, 238, 0.5)" }}>
                 <div style={{ display: "flex", justifyContent: "space-between" }}>
                     <img src={rmklogo} width="9%" height="9%" style={{ padding: "0.5%" }} />
@@ -155,7 +153,6 @@ const FacultyApprovalList = () => {
                     <button onClick={handleApproveAll} style={{ padding: "1% 3%", backgroundColor: "rgba(14, 73, 71, 1)", color: "white", fontWeight: "bold", fontSize: "14px", borderRadius: "25px", border: "none" }}>APPROVE ALL</button>
                 </div>
             </div>
-        </div>
     )
 }
 

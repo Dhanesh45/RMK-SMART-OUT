@@ -12,8 +12,7 @@ const StudentDashboard = () => {
   const [isPendingActive, setIsPendingActive] = useState(false);
   const [isRejectedActive, setIsRejectedActive] = useState(false);
   return (
-    <div className="flex">
-      <StudentSidebar />
+    
       <div style={{ width: "85%", height: "100vh" }}>
         <div
           style={{
@@ -257,7 +256,7 @@ const StudentDashboard = () => {
           </div>
         </div>
       </div>
-    </div>
+      
   );
 };
 

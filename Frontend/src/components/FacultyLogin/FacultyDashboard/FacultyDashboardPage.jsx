@@ -10,8 +10,7 @@ const FacultyDashboardPage = () => {
 
     const navigate = useNavigate();
     return ( 
-            <div className='flex'>
-            <FacultySidebar />
+           
             <div style={{ width: "85%", height: "100vh", backgroundColor: "rgba(238, 238, 238, 0.5)" }}>
                 {/* header */}
                 <div style={{ display: "flex", justifyContent: "space-between" }}>
@@ -45,7 +44,6 @@ const FacultyDashboardPage = () => {
                         <DetailedStatus />
                     </div>
                 </div>
-            </div>
             </div>
     )
 }
